@@ -1,0 +1,124 @@
+/* TABLET MADIA */
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 74px;
+  }
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    transition: color var(--transition-duration);
+  }
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active {
+    color: var(--btn-background-color);
+  }
+  .studio {
+    color: var(--btn-background-color);
+  }
+  .studio::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: var(--btn-background-color);
+    border-radius: 2px;
+    background-size: auto;
+    top: 49px;
+    left: 0;
+    position: absolute;
+  }
+  .portfolio {
+    color: var(--btn-background-color);
+  }
+  .portfolio::after {
+    display: block;
+    content: "";
+    width: 66px;
+    height: 4px;
+    background-color: var(--btn-background-color);
+    border-radius: 2px;
+    background-size: auto;
+    top: 45px;
+    left: 0;
+    position: absolute;
+  }
+
+  .address {
+    font-style: normal;
+  }
+  .address-list {
+    display: block;
+    gap: 40px;
+    margin-right: auto;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+  }
+  /* -------SEACTION FEATUR------- */
+  .section-featur {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .featur-list {
+    display: flex;
+    gap: 72px 24px;
+  }
+  .feater-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .repit-title {
+    text-align: start;
+  }
+  /* -------SEACTION WORK------- */
+
+  .section-work {
+    display: none;
+  }
+  /* -------TEAM CARD------- */
+  .plus-conteiner {
+    width: 582px;
+  }
+  .team-list {
+    gap: 64px 24px;
+  }
+
+  .plus-conteiner {
+    width: 582px;
+  }
+
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-item {
+    width: calc((100% - 3 * 24px) / 3);
+  }
+  .customers-link {
+    width: 168px;
+    height: 88px;
+  }
+}
