@@ -413,6 +413,7 @@ body {
 /* subscribe */
 .conteiner-email {
   display: flex;
+  flex-wrap: wrap;
 }
 .subscribe-text {
   display: flex;
