@@ -121,4 +121,18 @@
     width: 168px;
     height: 88px;
   }
+
+  .plus-conteiner {
+    width: 582px;
+  }
+  .footer-conteiner {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+  }
+  .footer-logo-grup {
+    text-align: start;
+  }
 }

@@ -331,11 +331,12 @@ body {
 /* -------FOOTER------- */
 .footer-section {
   background: var(--accent-background-color);
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-conteiner {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -376,6 +377,9 @@ body {
 }
 
 .soc-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -413,11 +417,10 @@ body {
 /* subscribe */
 .conteiner-email {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .subscribe-text {
-  display: flex;
-  align-items: center;
+  justify-content: center;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -427,11 +430,11 @@ body {
   margin-bottom: 16px;
 }
 .subscribe-form {
-  display: block;
+  width: 100%;
 }
 
 .subscribe-input {
-  width: 264px;
+  width: 290px;
   height: 40px;
   font-weight: 400;
   font-size: 12px;
@@ -447,7 +450,7 @@ body {
   border-radius: 4px;
   padding-left: 24px;
   background-color: transparent;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .subscribe-input::placeholder {
@@ -460,7 +463,7 @@ body {
 .subscribe-lebel {
 }
 .email-btn {
-  margin-left: 24px;
+  justify-content: center;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -726,8 +729,11 @@ body {
     height: 88px;
   }
   /* FOOTER MOB */
-
   .plus-conteiner {
-    width: 390px;
+    width: 398px;
+  }
+  .subscribe-input {
+    width: 398px;
+    height: 40px;
   }
 }
