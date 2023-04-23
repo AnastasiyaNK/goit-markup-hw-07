@@ -429,6 +429,65 @@
     background-color: var(--btn-background-color);
   }
   /* -------PORTFOLIO PAGE 2------- */
+  .conteiner {
+    width: 1158px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 74px;
+  }
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link:active {
+    color: var(--btn-background-color);
+  }
+  .studio {
+    color: var(--btn-background-color);
+  }
+
+  .portfolio {
+    color: var(--btn-background-color);
+  }
+  .portfolio::after {
+    display: block;
+    content: "";
+    width: 66px;
+    height: 4px;
+    background-color: var(--btn-background-color);
+    border-radius: 2px;
+    background-size: auto;
+    top: 45px;
+    left: 0;
+    position: absolute;
+  }
+
+  .address {
+    font-style: normal;
+  }
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .addres-item {
+  }
+  .contact-item {
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+
+  .contact-link:hover,
+  .contact-link:focus,
+  .contact-link:active {
+    color: var(--btn-background-color);
+  }
 
   .categories-project {
     padding-top: 96px;

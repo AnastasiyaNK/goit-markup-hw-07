@@ -859,68 +859,6 @@ body {
 
 /* -------PROJECT CATEGORIES------- */
 
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
-}
-
-.project-item {
-  flex-basis: calc((100% - 48px) / 3);
-}
-.project-item:hover .cover-text {
-  transform: translateY(0);
-}
-.project-wrap {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-}
-.project-link {
-  display: block;
-  transition: box-shadow var(--transition-duration);
-}
-.project-link:hover,
-.project-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.project-conteiner {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: 0;
-}
-.project-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--second-title-color);
-}
-.project-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  margin-top: 8px;
-}
-.cover-text {
-  position: absolute;
-  top: 0;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  background-color: var(--primari-accent-color);
-  height: 100%;
-  padding: 40px 32px;
-  transform: translateY(100%);
-  transition: transform var(--transition-duration);
-}
-
 /* MOBILE MADIA */
 @media screen and (min-width: 428px) {
   .conteiner {
