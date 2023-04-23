@@ -86,6 +86,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  padding: 24px 0;
   text-transform: uppercase;
   color: var(--primari-accent-color);
 }
@@ -308,7 +309,7 @@ body {
   padding-bottom: 96px;
 }
 .team-card-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -599,7 +600,8 @@ body {
 }
 .modal {
   position: absolute;
-  width: 408px;
+  max-width: 408px;
+  width: 100%;
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -772,18 +774,20 @@ body {
 
 .check-text {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--modal-text-color);
+  align-items: center;
 }
 .check-link {
   color: var(--primari-accent-color);
 }
 
-.check-text span {
+.check-text .check-box-wrapper {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -795,7 +799,7 @@ body {
   transition: background-color var(--transition-duration);
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked + .check-text .check-box-wrapper {
   background-color: var(--primari-accent-color);
   border: none;
   fill: #f4f4fd;
