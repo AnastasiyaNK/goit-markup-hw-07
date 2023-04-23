@@ -3,10 +3,7 @@
   .conteiner {
     width: 1158px;
   }
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+
   .nav-list {
     display: flex;
     gap: 40px;
@@ -24,18 +21,7 @@
   .studio {
     color: var(--btn-background-color);
   }
-  .studio::after {
-    display: block;
-    content: "";
-    width: 48px;
-    height: 4px;
-    background-color: var(--btn-background-color);
-    border-radius: 2px;
-    background-size: auto;
-    top: 45px;
-    left: 0;
-    position: absolute;
-  }
+
   .portfolio {
     color: var(--btn-background-color);
   }
@@ -56,9 +42,8 @@
     font-style: normal;
   }
   .address-list {
-    display: flex;
+    flex-direction: row;
     gap: 40px;
-    margin-right: auto;
   }
   .addres-item {
   }
@@ -67,9 +52,6 @@
 
   .contact-link {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
   }
 
   .contact-link:hover,
@@ -157,10 +139,7 @@
     color: var(--second-title-color);
   }
   .featur-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    font-weight: 400;
     margin-top: 8px;
   }
 
@@ -279,6 +258,9 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  .plus-conteiner {
+    max-width: 1158px;
+  }
 
   .customers-title {
     font-weight: 700;
@@ -325,7 +307,7 @@
     padding: 100px 0;
   }
   .footer-conteiner {
-    display: flex;
+    flex-direction: row;
   }
   .footer-logo-grup {
     margin-right: 120px;
