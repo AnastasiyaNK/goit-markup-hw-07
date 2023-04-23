@@ -809,6 +809,118 @@ body {
   margin-top: 16px;
   margin-bottom: 24px;
 }
+
+/* -------PORTFOLIO PAGE 2------- */
+
+.categories-project {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.hidden-title {
+}
+.btn-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.btn-item {
+}
+.btn-categories {
+  padding: 12px 24px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  color: var(--primari-accent-color);
+  background-color: var(--second-backgroud-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration), border-color var(--transition-duration),
+    box-shadow var(--transition-duration);
+}
+.btn-categories:hover,
+.btn-categories:focus,
+.btn-categories:active {
+  background-color: var(--btn-background-color);
+  color: var(--btn-text-color);
+  border-color: transparent;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* -------PROJECT CATEGORIES------- */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.project-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.project-item:hover .cover-text {
+  transform: translateY(0);
+}
+.project-wrap {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.project-link {
+  display: block;
+  transition: box-shadow var(--transition-duration);
+}
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.project-conteiner {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+}
+.project-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+.project-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  margin-top: 8px;
+}
+.cover-text {
+  position: absolute;
+  top: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: var(--primari-accent-color);
+  height: 100%;
+  padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform var(--transition-duration);
+}
+
 /* MOBILE MADIA */
 @media screen and (min-width: 428px) {
   .conteiner {
