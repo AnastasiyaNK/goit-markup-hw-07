@@ -22,22 +22,6 @@
     color: var(--btn-background-color);
   }
 
-  .portfolio {
-    color: var(--btn-background-color);
-  }
-  .portfolio::after {
-    display: block;
-    content: "";
-    width: 66px;
-    height: 4px;
-    background-color: var(--btn-background-color);
-    border-radius: 2px;
-    background-size: auto;
-    top: 45px;
-    left: 0;
-    position: absolute;
-  }
-
   .address {
     font-style: normal;
   }
@@ -429,6 +413,8 @@
     background-color: var(--btn-background-color);
   }
   /* -------PORTFOLIO PAGE 2------- */
+
+  /* header */
   .conteiner {
     width: 1158px;
   }
@@ -440,6 +426,14 @@
   }
   .nav-item {
     position: relative;
+  }
+  .nav-link {
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
   }
 
   .nav-link:hover,
@@ -462,7 +456,7 @@
     background-color: var(--btn-background-color);
     border-radius: 2px;
     background-size: auto;
-    top: 45px;
+    bottom: -22px;
     left: 0;
     position: absolute;
   }
@@ -480,7 +474,9 @@
   }
 
   .contact-link {
+    padding: 24px 0;
     font-size: 16px;
+    color: var(--main-text-color);
   }
 
   .contact-link:hover,
@@ -493,7 +489,7 @@
     padding-top: 96px;
     padding-bottom: 120px;
   }
-
+  /* portfolio btn */
   .hidden-title {
   }
   .btn-list {
@@ -535,6 +531,12 @@
   }
 
   /* -------PROJECT CATEGORIES------- */
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 
   .project-list {
     display: flex;
@@ -596,5 +598,32 @@
     padding: 40px 32px;
     transform: translateY(100%);
     transition: transform var(--transition-duration);
+  }
+  /* footer */
+  .footer-conteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: flex-start;
+  }
+  .footer-logo-grup {
+    text-align: start;
+  }
+  .soc-text {
+    text-align: start;
+  }
+  .subscribe-text {
+    text-align: start;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-input {
+    margin-bottom: 0;
+    max-width: 264px;
+  }
+  .email-btn {
+    margin: 0;
   }
 }
